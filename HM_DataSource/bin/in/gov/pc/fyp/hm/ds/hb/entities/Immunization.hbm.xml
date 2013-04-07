@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+
+	<class name="in.gov.pc.fyp.hm.objects.Immunization" table="hm_immunization">
+
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>		
+				
+		<property name="ageStart" type="int">
+			<column name="age_start" not-null="false" />
+		</property>		
+		
+		<property name="ageEnd" type="int">
+			<column name="age_end" not-null="false" />
+		</property>	
+			
+		<property name="ageDesc">
+			<column name="age_desc" length="45" not-null="false" />
+		</property>
+		
+		<property name="vaccineName">
+			<column name="vaccine_name" length="45" not-null="false" />
+		</property>
+		
+		<property name="diseasesPrevented">
+			<column name="diseases_prevented" length="100" not-null="false" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

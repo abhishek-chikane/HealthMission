@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+
+	<class name="in.gov.pc.fyp.hm.objects.Address" table="hm_address">
+
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+
+		<property name="address1">
+			<column name="address_1" length="45" not-null="false" />
+		</property>
+		
+		<property name="address2">
+			<column name="address_2" length="45" not-null="false" />
+		</property>
+		
+		<property name="area">
+			<column name="area" length="45" not-null="false" />
+		</property>
+		
+		<property name="city">
+			<column name="city" length="45" not-null="false" />
+		</property>
+		
+		<property name="taluka">
+			<column name="taluka" length="45" not-null="false" />
+		</property>
+		
+		<property name="district">
+			<column name="district" length="45" not-null="false" />
+		</property>
+		
+		<property name="state">
+			<column name="state" length="45" not-null="false" />
+		</property>
+		
+		<property name="pin" type="int">
+			<column name="pin" not-null="false" />
+		</property>
+						
+		<property name="isActive" type="int">
+			<column name="is_active" not-null="false" />
+		</property>
+		
+		<property name="createdBy">
+			<column name="created_by" length="45" not-null="false" />
+		</property>
+		
+		<property name="createdDate" type="timestamp">
+			<column name="created_date" not-null="false" />
+		</property>
+		
+		<property name="modifiedBy">
+			<column name="modified_by" length="45" not-null="false" />
+		</property>
+		
+		<property name="modifiedDate" type="timestamp">
+			<column name="modified_date" not-null="false" />
+		</property>
+		
+	</class>
+</hibernate-mapping>
