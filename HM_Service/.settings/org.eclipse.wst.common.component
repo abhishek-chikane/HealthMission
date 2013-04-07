@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="HM_Service">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="HM_Objects.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/HM_Objects/HM_Objects">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="HM_DataSource.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/HM_DataSource/HM_DataSource">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="HM_Service"/>
+        <property name="java-output-path" value="/HM_Service/build/classes"/>
+    </wb-module>
+</project-modules>
